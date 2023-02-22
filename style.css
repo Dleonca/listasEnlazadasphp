@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Zeyada&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #fff ;
+}
+/* header */
+header{
+    box-sizing: border-box;
+    width: 100%;
+    height: 8vh;
+    background-color: #000 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h3{
+    margin:0;
+}
+.tituloPagina{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+
+/* main home */
+.principal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.sectizq{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #fff;
+    padding: 10px 15px;
+
+}
+.sectder{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: rgb(238, 243, 250);
+    padding: 10px 15px;
+
+}
+.verlista{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tituloOP{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(7, 0, 34);
+    font-size: 12px;
+    margin: 0;
+}

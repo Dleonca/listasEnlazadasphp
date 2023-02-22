@@ -6,17 +6,17 @@ include("nodo.php");
       private $NodoInicial;
       private $Final;
         
-      function __construct(){
-        $this->NodoInicial = null;
-        $this->Final = null;
-      }
-      function ListaVacia(){
+        function __construct(){
+         $this->NodoInicial = null;
+         $this->Final = null;
+        }
+        function ListaVacia(){
          if($this->NodoInicial == null){
            return true;
-        }else{
+         }else{
            return false;
+         }
         }
-      }
       function longitud(){
         $P = $this->NodoInicial;
         $contador = 0;
@@ -203,24 +203,22 @@ include("nodo.php");
         }
       }
     }
-
     // ordenamiento 
-    /*
     function ordenAscendenteLista(){
       $contador = $this->longitud();
       while ($contador > 0){
         $previo = $this->NodoInicial;
         $P = $this->NodoInicial;
         $contador = 0;
-        for ($i = 1; $i <= $this->longitud(); $i++) {
-          $previo = $actual ;
+        for ($i = 0; $i <= $this->longitud()-1; $i++) {
+          $previo = $P ;
           $P = $P->getSig();
           if ($previo->getInfo() > $P->getInfo() ){
-            $this->moverElemento(i, i+1);
+            $this->moverElemento($i, $i+1);
             $contador = $contador + 1 ;
           }
         }
       }
-    }*/
+    }
   } 
 ?>
